@@ -11,5 +11,6 @@ export const GlobalStyle = createGlobalStyle`
 body,html {
     width: 100%;
     height: auto;
+    font-family: 'Poppins', sans-serif;
 }
 `;

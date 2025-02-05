@@ -1,12 +1,21 @@
-
+import Navbar from "../../components/navbar";
+import * as S from "./style";
 export default function Dashboard(){
 
     return(
         <>
-        <header>
-            <h1>DashBoard - Info </h1>
-            <h6>Aqui estão as informações sobre suas vendas.</h6>
-        </header>
+        <S.ContentWrapped>
+            <S.DashBoard>
+                <header>
+                <h1>Olá, seja bem-vindo(a)! </h1>
+                <h3>Esse é o seu DashBoard pessoal.</h3>
+                <p>Informações abaixo.</p>
+                </header>
+            </S.DashBoard>
+        <S.NavWrapped>
+            <Navbar/>
+        </S.NavWrapped>
+        </S.ContentWrapped>
         </>
     )
 }
