@@ -4,6 +4,7 @@ export const NavBar = styled.div `
     background-color: white;
     height: 100vh;
     border-radius: 10px;
+     
     h1{
         margin-top: 50px;
         margin-bottom: 50px;
