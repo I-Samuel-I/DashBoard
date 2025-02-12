@@ -12,5 +12,7 @@ body,html {
     width: 100%;
     height: auto;
     font-family: 'Poppins', sans-serif;
-}
+    overflow-x: hidden;
+    color: #262626;
+}   
 `;

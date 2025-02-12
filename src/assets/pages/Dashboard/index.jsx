@@ -9,11 +9,9 @@ export default function Dashboard() {
         <S.DashBoard>
           <header>
             <S.WrappedTittle>
-                <h1>Olá, seja bem-vindo(a)! </h1>
-                <h3>Esse é o seu DashBoard pessoal.</h3>
-                <p>Informações abaixo.</p>
+              <h1>Olá, seja bem-vindo(a)! </h1>
+              <h3>Esse é o seu DashBoard pessoal.</h3>
             </S.WrappedTittle>
-            
             <figure>
               <img src={Perfil} alt="Perfil" />
               <p>Samuel Gomes</p>
@@ -23,9 +21,7 @@ export default function Dashboard() {
             <Graphic />
           </section>
         </S.DashBoard>
-        <S.NavWrapped>
-          <Navbar />
-        </S.NavWrapped>
+        <Navbar />
       </S.ContentWrapped>
     </>
   );
