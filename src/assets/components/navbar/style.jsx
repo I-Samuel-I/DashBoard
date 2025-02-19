@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const NavBar = styled.div`
     background-color: white;
     width: 15%;
     border-radius: 10px;
-    border: solid 1px;
     box-shadow: 10px 0px  15px #73737316;
+    
   h1 {
     padding: 30px;
     font-size: 2.5em;
@@ -32,12 +33,13 @@ export const NavBar = styled.div`
   }
   li {
     display: flex;
-
+    padding: 10px;
     align-items: center;
     width: 100%;
     height: 5vh;
     font-size: 1.2em;
     font-weight: 550;
+   
 
     &:hover {
       color: #9e6efe;
@@ -61,4 +63,9 @@ export const OptionsWrapped = styled.div`
       color: #f03d3d;
     }
   }
+`;
+
+export const Icon = styled(FontAwesomeIcon)`
+  margin-right: 5%;
+  font-size: 20px; 
 `;

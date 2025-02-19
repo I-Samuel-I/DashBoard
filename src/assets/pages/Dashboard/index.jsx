@@ -1,5 +1,5 @@
 import Graphic from "../../components/Graphic";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/navbar";
 import Perfil from "../../img/perfil.png";
 import * as S from "./style";
 export default function Dashboard() {

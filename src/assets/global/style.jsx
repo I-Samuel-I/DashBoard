@@ -14,5 +14,6 @@ body,html {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     color: #262626;
+    
 }   
 `;

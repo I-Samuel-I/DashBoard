@@ -1,8 +1,6 @@
 import * as S from "./style";
 import { useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
+import { faTableColumns,faWallet,faCartShopping,faUsersGear , faGear ,faPowerOff} from "@fortawesome/free-solid-svg-icons";;
 export default function Navbar() {
   const Navigate = useNavigate();
 
@@ -17,26 +15,43 @@ export default function Navbar() {
           <h1>DashLy</h1>
           <ul>
             <button onClick={() => handleNavigate("/dashboard")}>
-              
-              <li>DashBoard</li>
+              <li>
+                <S.Icon icon={faTableColumns} />
+                DashBoard
+              </li>
             </button>
             <button onClick={() => handleNavigate("/wallet")}>
-              <li>Carteira</li>
+              <li>
+                <S.Icon icon={faWallet} />
+                Carteira
+              </li>
             </button>
             <button onClick={() => handleNavigate("/transactions")}>
-              <li>Transações</li>
+              <li>
+                <S.Icon icon={faCartShopping} />
+                Transações
+              </li>
             </button>
             <button onClick={() => handleNavigate("/support")}>
-              <li>Suporte</li>
+              <li>
+                <S.Icon icon={faUsersGear} />
+                Suporte
+              </li>
             </button>
           </ul>
           <S.OptionsWrapped>
             <ul>
               <button onClick={() => handleNavigate("/settings")}>
-                <li>Configurações</li>
+                <li>
+                  <S.Icon icon={faGear} />
+                  Configurações
+                </li>
               </button>
               <button onClick={() => handleNavigate("/")}>
-                <li>Desconectar</li>
+                <li>
+                  <S.Icon icon={faPowerOff} />
+                  Desconectar
+                </li>
               </button>
             </ul>
           </S.OptionsWrapped>

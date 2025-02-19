@@ -7,6 +7,7 @@ export const Graphic = styled.section`
     margin-left: 5%;
     gap: 2%;
     width: 100%;
+    box-shadow: 10px 1px  15px #73737316;
   }
 
   div {
@@ -16,6 +17,7 @@ export const Graphic = styled.section`
     border-radius: 15px;
     height: auto;
     padding: 20px;
+    
   }
   ul {
     flex-direction: column;
@@ -79,13 +81,14 @@ export const WrappedTransaction = styled.div`
     color: #9e6efe;
     width: 100%;
     margin-bottom: 10%;
-    background-color: #73737313;
+    background-color: #73737310;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 15px;
     border-radius: 8px;
     font-weight: 600;
+    
   }
   h1{
     margin-bottom: 5%;
@@ -98,15 +101,18 @@ export const WrappedFinance = styled.section`
     margin-top: 3%;
     gap: 35px;
     display: flex;
+    
   }
   div {
     background-color: white;
     width: 22%;
     height: 20vh;
     border-radius: 15px;
+    padding: 15px;
+    box-shadow: 10px 1px  15px #73737316;
   }
   h1 {
-    font-weight: 500;
+    font-weight: 550;
     padding: 10px;
   }
   p {

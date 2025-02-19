@@ -9,7 +9,7 @@ export const BuyerHistory = styled.section`
   margin-top: 3%;
   margin-bottom: 3%;
   padding: 30px;
-
+  box-shadow: 10px 1px  15px #73737316;
   h1 {
     font-weight: 550;
     font-size: 1.4em;

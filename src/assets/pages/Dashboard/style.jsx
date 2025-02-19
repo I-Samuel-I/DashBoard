@@ -7,7 +7,7 @@ export const ContentWrapped = styled.div`
 
 export const DashBoard = styled.header`
   flex: 1;
-  background-color: #73737310;
+  background-color: #73737309;
   header {
     margin-left: 5%;
     margin-top: 3%;
