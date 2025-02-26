@@ -10,10 +10,8 @@ export default function Home() {
   return (
     <>
       <S.Home>
-        <section>
           <h1>Bem-Vindo(a) ao meu DashBoard pessoal</h1>
           <S.AntButton onClick={Join}> Entrar</S.AntButton>
-        </section>
       </S.Home>
     </>
   );

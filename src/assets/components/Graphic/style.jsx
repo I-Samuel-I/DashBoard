@@ -7,7 +7,7 @@ export const Graphic = styled.section`
     margin-left: 5%;
     gap: 2%;
     width: 100%;
-    box-shadow: 10px 1px  15px #73737316;
+    box-shadow: 10px 1px 15px #73737316;
   }
 
   div {
@@ -17,7 +17,6 @@ export const Graphic = styled.section`
     border-radius: 15px;
     height: auto;
     padding: 20px;
-    
   }
   ul {
     flex-direction: column;
@@ -34,7 +33,6 @@ export const Graphic = styled.section`
   }
 `;
 export const WrappedMonth = styled.nav`
-  border: solid 1px;
   ul {
     display: flex;
     flex-direction: row;
@@ -67,15 +65,13 @@ export const WrappedGraphColumn = styled.div`
   }
   div {
     background-color: #e8dcff;
-    border: solid 1px;
   }
-  div:first-child {
-    color: red;
+  div,li{
+    position: relative;
   }
 `;
 
 export const WrappedTransaction = styled.div`
-  
   width: 100%;
   div {
     color: #9e6efe;
@@ -88,9 +84,8 @@ export const WrappedTransaction = styled.div`
     padding: 10px 15px;
     border-radius: 8px;
     font-weight: 600;
-    
   }
-  h1{
+  h1 {
     margin-bottom: 5%;
   }
 `;
@@ -101,7 +96,6 @@ export const WrappedFinance = styled.section`
     margin-top: 3%;
     gap: 35px;
     display: flex;
-    
   }
   div {
     background-color: white;
@@ -109,7 +103,7 @@ export const WrappedFinance = styled.section`
     height: 20vh;
     border-radius: 15px;
     padding: 15px;
-    box-shadow: 10px 1px  15px #73737316;
+    box-shadow: 10px 1px 15px #73737316;
   }
   h1 {
     font-weight: 550;
