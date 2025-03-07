@@ -5,12 +5,30 @@ export const Config = styled.section`
   flex-direction: row-reverse;
   background-color: #73737309;
   height: 100vh;
+  
 `;
 export const Options = styled.div`
   width: 80%;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
+  
+ 
+@media (600px < width <= 767px) {
+  section{
+    
+  }
+  
+  width: 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5%;
+}
+ 
+@media (767px < width <= 991px) {
+  width: 100%;
+}
+  
   div {
     box-shadow: 10px 1px 15px #73737316;
     padding: 20px;
@@ -21,9 +39,24 @@ export const Options = styled.div`
   button {
     border: none;
     border-radius: 10px;
-    width: 8%;
+    width: 15%;
     font-weight: 550;
     font-size: 0.9em;
+    height: 50px;
+
+    /* Dispositivos Largos (laptops/desktops, 992px para cima) */
+@media (991px < width <= 1199px) {
+  width: 50%;
+  height: 50px;
+}
+/* Dispositivos Médios (Tablets deitados, 768px para cima) */
+@media (767px < width <= 991px) {
+  width: 100%;
+}
+@media (  width <= 767px) {
+  width: 60%;
+}
+    
   }
   button:hover {
     cursor: pointer;

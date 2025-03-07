@@ -1,95 +1,62 @@
 import styled from "styled-components";
 
 export const Graphic = styled.section`
-  width: 100%;
-  section {
-    display: flex;
-    margin-left: 5%;
-    gap: 2%;
-    width: 100%;
-    box-shadow: 10px 1px 15px #73737316;
-  }
+  display: flex;
+  width: 95%;
+  border: solid 1px;
 
   div {
-    display: flex;
-    flex-direction: column;
     background-color: white;
-    border-radius: 15px;
     height: auto;
+    width: 100%;
+    margin-left: 5%;
+    box-shadow: 10px 1px 15px #73737316;
     padding: 20px;
   }
   ul {
-    flex-direction: column;
     list-style: none;
-    display: flex;
-
-    gap: 10px;
-    padding: 10px;
   }
-  h1 {
-    padding: 10px;
-    font-size: 1.5em;
-    font-weight: 550;
-  }
-`;
-export const WrappedMonth = styled.nav`
-  ul {
-    display: flex;
-    flex-direction: row;
-    padding-left: 2%;
-    color: #414141;
-  }
-  ul:first-child {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 10%;
-    gap: 30px;
-    font-size: 1.1em;
-  }
-  ul:nth-child(2) {
-    padding-left: 50px;
-  }
-`;
-
-export const WrappedGraphColumn = styled.div`
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
   li {
     display: flex;
-    justify-content: center;
-  }
-  div {
-    background-color: #e8dcff;
-  }
-  div,li{
-    position: relative;
+    justify-content: space-between;
+    padding: 5px;
   }
 `;
+export const ColumnWrapped = styled.span`
+  ul {
+    display: flex;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+  }
 
-export const WrappedTransaction = styled.div`
-  width: 100%;
   div {
+    position: relative;
+
+    transition: height 0.3s ease-in-out;
+  }
+`;
+export const WrappedHistoric = styled.span`
+  li {
     color: #9e6efe;
-    width: 100%;
-    margin-bottom: 10%;
     background-color: #73737310;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-weight: 600;
+    align-items: center;
+  }
+  li,p {
+    margin-bottom: 2%;
+    font-weight: 550;
+    padding: 3px;
+    border-radius: 10px;
+  }
+  li {
+    padding-left: 3%;
   }
   h1 {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
   }
 `;
-
 export const WrappedFinance = styled.section`
   section {
     margin-left: 5%;

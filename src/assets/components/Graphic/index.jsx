@@ -7,78 +7,77 @@ export default function Graphic() {
   return (
     <>
       <S.Graphic>
-        <section>
-          <div>
-            <h1>Gráfico de Receitas</h1>
-            <nav>
-              <S.WrappedMonth>
-                <ul>
-                  <li> 2000</li>
-                  <li> 1000</li>
-                  <li> 500</li>
-                  <li> 250</li>
-                  <li>0</li>
-                </ul>
-                <ul>
-                  <S.WrappedGraphColumn>
-                    <div />
-                    <li>Fev</li>
-                  </S.WrappedGraphColumn>
-                  <S.WrappedGraphColumn>
-                    <div />
-                    <li>Mar</li>
-                  </S.WrappedGraphColumn>
-                  <S.WrappedGraphColumn>
-                    <div />
-                    <li>Abr</li>
-                  </S.WrappedGraphColumn>
-                  <S.WrappedGraphColumn>
-                    <div />
-                    <li>Mai</li>
-                  </S.WrappedGraphColumn>
-                  <S.WrappedGraphColumn>
-                    <div />
-                    <li>Jun</li>
-                  </S.WrappedGraphColumn>
-                  <S.WrappedGraphColumn>
-                    <div />
-                    <li>Jul</li>
-                  </S.WrappedGraphColumn>
-                  <S.WrappedGraphColumn>
-                    <div />
-                    <li>Ago</li>
-                  </S.WrappedGraphColumn>
-                  <S.WrappedGraphColumn>
-                    <div />
-                    <li>Set</li>
-                  </S.WrappedGraphColumn>
-                  <S.WrappedGraphColumn>
-                    <div />
-                    <li>Out</li>
-                  </S.WrappedGraphColumn>
-                </ul>
-              </S.WrappedMonth>
-            </nav>
-          </div>
-          <div>
-            <S.WrappedTransaction>
-              <h1>Histórico de Transações</h1>
-              <div>
-                <p>Ontem</p>
+        <div>
+          <h1>Gráfico de Receitas</h1>
+          <ul>
+            <li>2000</li>
+            <li>1000</li>
+            <li>500</li>
+            <li>250</li>
+            <li>0</li>
+          </ul>
+          <S.ColumnWrapped>
+            <ul>
+              <li>
+                <div />
+                <p>a</p>
+              </li>
+              <li>
+                <div />
+                <p>a</p>
+              </li>
+              <li>
+                <div />
+                <p>a</p>
+              </li>
+              <li>
+                <div />
+                <p>a</p>
+              </li>
+              <li>
+                <div />
+                <p>a</p>
+              </li>
+              <li>
+                <div />
+                <p>a</p>
+              </li>
+              <li>
+                <div />
+                <p>a</p>
+              </li>
+              <li>
+                <div />
+                <p>a</p>
+              </li>
+              <li>
+                <div />
+                <p>a</p>
+              </li>
+            </ul>
+          </S.ColumnWrapped>
+        </div>
+        <div>
+          <S.WrappedHistoric>
+            <h1>Histórico de Transações</h1>
+            <ul>
+              <li>
+                Ontem
+                <p>R$ -540,52</p>
+              </li>
+              <li>
+                Quinta-Feira
                 <p>R$ -273,90</p>
-              </div>
-              <div>
-                <p>Quinta-Feira</p>
-                <p>R$ -273,90</p>
-              </div>
-              <div>
-                <p>Segunda-Feira</p>
+              </li>
+              <li>
+                Segunda-Feira
                 <p>R$ -1.456,20</p>
-              </div>
-            </S.WrappedTransaction>
-          </div>
-        </section>
+              </li>
+            </ul>
+          </S.WrappedHistoric>
+        </div>
       </S.Graphic>
+
       <S.WrappedFinance>
         <section>
           <div>

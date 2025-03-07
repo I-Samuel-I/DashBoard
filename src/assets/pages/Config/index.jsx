@@ -1,9 +1,19 @@
-import { use, useState } from "react";
+import { use, useEffect, useState } from "react";
 import Navbar from "../../components/navbar";
 import * as S from "./style";
 import DarkMode from "../../components/DarkMode";
 import Language from "../../components/Language";
 export default function Config() {
+  const [showNavbar, setShowNavbar] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowNavbar(window.innerWidth > 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
   return (
     <>
       <S.Config>
@@ -65,7 +75,7 @@ export default function Config() {
                     a ela.
                   </p>
                 </h3>
-                  <S.DeleteBtn>Excluir</S.DeleteBtn>  
+                <S.DeleteBtn>Excluir</S.DeleteBtn>
               </li>
               <li>
                 <h3>
@@ -80,7 +90,7 @@ export default function Config() {
             </ul>
           </div>
         </S.Options>
-        <Navbar />
+        {showNavbar && <Navbar />}
       </S.Config>
     </>
   );

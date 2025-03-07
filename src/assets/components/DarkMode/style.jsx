@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const DarkMode = styled.label`
   position: relative;
   display: inline-block;
-  width: 50px;
+  width: 5%;
   height: 24px;
 
   input {
@@ -11,6 +11,23 @@ export const DarkMode = styled.label`
     width: 0;
     height: 0;
   }
+
+
+@media (1300px < width <= 1440px) {
+  width:  7.5%;
+}
+@media (1199px < width <= 1299px) {
+  width:  10%;
+}
+@media (1049px < width <= 1199px) {
+  width:  15.5%;
+}
+@media (1000px < width <= 1049px) {
+  width:  18.5%;
+}
+@media (900px < width <= 999px) {
+  width:  25.5%;
+}
 `;
 
 export const Slider = styled.span`

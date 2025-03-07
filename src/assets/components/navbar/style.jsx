@@ -7,6 +7,17 @@ export const NavBar = styled.div`
     border-radius: 10px;
     box-shadow: 10px 0px  15px #73737316;
     
+    @media (width <= 1440px) {
+      width: 20%;
+    }
+    @media (991px < width <= 1199px) {
+      width: 30%;
+      height: 150vh;
+    }
+    @media (767px < width <= 991px) {
+      width: 50%;
+    }
+
   h1 {
     padding: 30px;
     font-size: 2.5em;
