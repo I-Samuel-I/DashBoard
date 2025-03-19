@@ -1,8 +1,9 @@
-import { use, useEffect, useState } from "react";
-import Navbar from "../../components/navbar";
+import { useEffect, useState } from "react";
 import * as S from "./style";
 import DarkMode from "../../components/DarkMode";
 import Language from "../../components/Language";
+import NavbarDisplayOff from "../../components/NavbarDisplayOff";
+import ReturnPage from "../../routes/returnPage";
 export default function Config() {
   const [showNavbar, setShowNavbar] = useState(true);
 
@@ -90,7 +91,7 @@ export default function Config() {
             </ul>
           </div>
         </S.Options>
-        {showNavbar && <Navbar />}
+        <NavbarDisplayOff />
       </S.Config>
     </>
   );

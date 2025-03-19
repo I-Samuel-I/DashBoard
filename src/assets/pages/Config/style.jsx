@@ -5,30 +5,24 @@ export const Config = styled.section`
   flex-direction: row-reverse;
   background-color: #73737309;
   height: 100vh;
-  
 `;
 export const Options = styled.div`
   width: 80%;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
-  
- 
-@media (600px < width <= 767px) {
-  section{
-    
+
+  @media (width <= 767px) {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
   }
-  
-  width: 100%;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 5%;
-}
- 
-@media (767px < width <= 991px) {
-  width: 100%;
-}
-  
+
+  @media (767px < width <= 991px) {
+    width: 100%;
+  }
+
   div {
     box-shadow: 10px 1px 15px #73737316;
     padding: 20px;
@@ -44,19 +38,20 @@ export const Options = styled.div`
     font-size: 0.9em;
     height: 50px;
 
-    /* Dispositivos Largos (laptops/desktops, 992px para cima) */
-@media (991px < width <= 1199px) {
-  width: 50%;
-  height: 50px;
-}
-/* Dispositivos Médios (Tablets deitados, 768px para cima) */
-@media (767px < width <= 991px) {
-  width: 100%;
-}
-@media (  width <= 767px) {
-  width: 60%;
-}
-    
+    @media (991px < width <= 1199px) {
+      width: 50%;
+      height: 50px;
+    }
+
+    @media (651px < width <= 990px) {
+      width: 40%;
+    }
+    @media (500 <width <= 650px) {
+      width: 65%;
+    }
+    @media (width <= 499px) {
+      width: 100%;
+    }
   }
   button:hover {
     cursor: pointer;
@@ -67,7 +62,7 @@ export const Options = styled.div`
   h1 {
     padding-bottom: 2%;
   }
-  h3{
+  h3 {
     color: #262626;
   }
   ul {
@@ -83,11 +78,18 @@ export const Options = styled.div`
     padding-top: 10px;
     font-weight: normal;
     font-size: 0.9em;
-    color:#737373;
+    color: #737373;
+
+    @media (500 <= width <= 767px) {
+      padding-right: 50px;
+    }
+    @media (width <= 499px) {
+      padding-right: 0px;
+    }
   }
 `;
-export const DeleteBtn = styled.button `
-        &&:hover{
-            color: red; 
-        }
-`
+export const DeleteBtn = styled.button`
+  &&:hover {
+    color: red;
+  }
+`;

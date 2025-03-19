@@ -3,8 +3,15 @@ import styled from "styled-components";
 export const Graphic = styled.section`
   display: flex;
   width: 95%;
-  border: solid 1px;
 
+  @media (width <= 1199px) {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    div {
+      margin-bottom: 5%;
+    }
+  }
   div {
     background-color: white;
     height: auto;
@@ -44,7 +51,8 @@ export const WrappedHistoric = styled.span`
     display: flex;
     align-items: center;
   }
-  li,p {
+  li,
+  p {
     margin-bottom: 2%;
     font-weight: 550;
     padding: 3px;
@@ -59,14 +67,12 @@ export const WrappedHistoric = styled.span`
 `;
 export const WrappedFinance = styled.section`
   section {
-    margin-left: 5%;
-    margin-top: 3%;
-    gap: 35px;
     display: flex;
+    width: 90%;
+    margin-left: 5%;
   }
   div {
     background-color: white;
-    width: 22%;
     height: 20vh;
     border-radius: 15px;
     padding: 15px;
@@ -80,6 +86,32 @@ export const WrappedFinance = styled.section`
     font-size: 2em;
     font-weight: 550;
     padding-left: 10px;
+  }
+
+  @media (width <= 1199px) {
+    section {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+    div {
+      width: 43.5%;
+    }
+  }
+`;
+export const WrappedResponsiveFinance = styled.span`
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 3%;
+
+  
+  div {
+  }
+  @media (width <= 1199px) {
+    display: flex;
+    gap: 20px;
+    width: 100%;
   }
 `;
 

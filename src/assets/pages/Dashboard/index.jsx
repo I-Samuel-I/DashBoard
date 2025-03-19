@@ -1,5 +1,5 @@
 import Graphic from "../../components/Graphic";
-import Navbar from "../../components/navbar";
+import NavbarDisplayOff from "../../components/NavbarDisplayOff";
 import Perfil from "../../img/perfil.png";
 import * as S from "./style";
 export default function Dashboard() {
@@ -21,7 +21,7 @@ export default function Dashboard() {
             <Graphic />
           </section>
         </S.DashBoard>
-        <Navbar />
+        <NavbarDisplayOff />
       </S.ContentWrapped>
     </>
   );

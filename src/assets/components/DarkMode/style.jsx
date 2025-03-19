@@ -12,22 +12,33 @@ export const DarkMode = styled.label`
     height: 0;
   }
 
-
-@media (1300px < width <= 1440px) {
-  width:  7.5%;
-}
-@media (1199px < width <= 1299px) {
-  width:  10%;
-}
-@media (1049px < width <= 1199px) {
-  width:  15.5%;
-}
-@media (1000px < width <= 1049px) {
-  width:  18.5%;
-}
-@media (900px < width <= 999px) {
-  width:  25.5%;
-}
+  @media (1300px < width <= 1440px) {
+    width: 7.5%;
+  }
+  @media (1199px < width <= 1299px) {
+    width: 10%;
+  }
+  @media (1049px < width <= 1199px) {
+    width: 15.5%;
+  }
+  @media (1000px < width <= 1049px) {
+    width: 18.5%;
+  }
+  @media (900px < width <= 999px) {
+    width: 12%;
+  }
+  @media (769px < width <= 900px) {
+    width: 15%;
+  }
+  @media (699px< width <= 769px) {
+    width: 15%;
+  }
+  @media (width <= 699px) {
+    width: 22%;
+  }
+  @media (width <= 599px) {
+    width: 30%;
+  }
 `;
 
 export const Slider = styled.span`

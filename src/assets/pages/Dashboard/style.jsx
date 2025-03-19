@@ -4,7 +4,6 @@ export const ContentWrapped = styled.div`
   display: flex;
   flex-direction: row-reverse;
 `;
-
 export const DashBoard = styled.header`
   flex: 1;
   background-color: #73737309;
@@ -18,8 +17,8 @@ export const DashBoard = styled.header`
     display: flex;
     margin-left: auto;
     position: relative;
-    top: 25px;
-    right: 250px;
+
+    right: 10%;
     img {
       position: relative;
       width: 50px;
@@ -36,13 +35,20 @@ export const DashBoard = styled.header`
     }
   }
 `;
+export const Icons = styled.div`
+  
+    
+      
+    
+  
+`;
 
 export const WrappedTittle = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 3%;
 
-  h3{
+  h3 {
     color: #737373;
     font-weight: 500;
   }

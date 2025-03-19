@@ -80,41 +80,46 @@ export default function Graphic() {
 
       <S.WrappedFinance>
         <section>
-          <div>
-            <h1>Total de Vendas</h1>
-            <p>R$ 3.265,21</p>
-            <S.WrappedIconGreen>
-              <FontAwesomeIcon icon={faArrowTrendUp} />
-              <p>+</p>
-              <p>11%</p>
-            </S.WrappedIconGreen>
-          </div>
-          <div>
-            <h1>Total líquido</h1>
-            <p>R$ 2.825,58</p>
-            <S.WrappedIconGreen>
-              <FontAwesomeIcon icon={faArrowTrendUp} />
-              <p>+</p>
-              <p> 15%</p>
-            </S.WrappedIconGreen>
-          </div>
-          <div>
-            <h1>Compras canceladas</h1>
+          <S.WrappedResponsiveFinance>
+            <div>
+              <h1>Total de Vendas</h1>
+              <p>R$ 3.265,21</p>
 
-            <p>R$ 130,00</p>
-            <S.WrappedIconRed>
-              <FontAwesomeIcon icon={faArrowTrendDown} />
-              <p> -80%</p>
-            </S.WrappedIconRed>
-          </div>
-          <div>
-            <h1>Reembolsos</h1>
-            <p>R$ 345,00</p>
-            <S.WrappedIconRed>
-              <FontAwesomeIcon icon={faArrowTrendDown} />
-              <p> -78%</p>
-            </S.WrappedIconRed>
-          </div>
+              <S.WrappedIconGreen>
+                <FontAwesomeIcon icon={faArrowTrendUp} />
+                <p>+</p>
+                <p>11%</p>
+              </S.WrappedIconGreen>
+            </div>
+            <div>
+              <h1>Total líquido</h1>
+              <p>R$ 2.825,58</p>
+              <S.WrappedIconGreen>
+                <FontAwesomeIcon icon={faArrowTrendUp} />
+                <p>+</p>
+                <p> 15%</p>
+              </S.WrappedIconGreen>
+            </div>
+          </S.WrappedResponsiveFinance>
+          <S.WrappedResponsiveFinance>
+            <div>
+              <h1>Compras canceladas</h1>
+
+              <p>R$ 130,00</p>
+              <S.WrappedIconRed>
+                <FontAwesomeIcon icon={faArrowTrendDown} />
+                <p> -80%</p>
+              </S.WrappedIconRed>
+            </div>
+            <div>
+              <h1>Reembolsos</h1>
+              <p>R$ 345,00</p>
+              <S.WrappedIconRed>
+                <FontAwesomeIcon icon={faArrowTrendDown} />
+                <p> -78%</p>
+              </S.WrappedIconRed>
+            </div>
+          </S.WrappedResponsiveFinance>
         </section>
       </S.WrappedFinance>
       <Historic />

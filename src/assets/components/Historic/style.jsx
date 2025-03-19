@@ -19,6 +19,7 @@ export const WrappedTabble = styled.table`
   width: 100%;
   height: 100%;
   margin-top: 3%;
+  border-collapse: collapse;
   thead {
     font-size: 1.1em;
   }
@@ -40,12 +41,17 @@ export const WrappedTabble = styled.table`
   tbody tr:nth-child(2) td:last-child {
     color: orange;
   }
+  @media ( width <= 1199px) {
+  
+  
+}
+
 `;
 export const StatusCircle = styled.span`
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: ${(props) => props.color}; 
-    margin-right: 8px; 
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: ${(props) => props.color};
+  margin-right: 8px;
 `;

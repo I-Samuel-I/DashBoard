@@ -1,6 +1,6 @@
 import * as S from "./style";
 import { useNavigate } from "react-router-dom";
-import { faTableColumns,faWallet,faCartShopping,faUsersGear , faGear ,faPowerOff} from "@fortawesome/free-solid-svg-icons";;
+import { faTableColumns,faWallet,faCartShopping,faUsersGear , faGear ,faPowerOff} from "@fortawesome/free-solid-svg-icons";
 export default function Navbar() {
   const Navigate = useNavigate();
 
