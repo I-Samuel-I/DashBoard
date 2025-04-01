@@ -4,6 +4,7 @@ export default function Historic() {
     <>
       <S.BuyerHistory>
         <h1>Histórico de Compradores</h1>
+        <S.TableContainer>
         <S.WrappedTabble>
           <thead>
             <tr>
@@ -38,6 +39,7 @@ export default function Historic() {
             </tr>
           </tbody>
         </S.WrappedTabble>
+        </S.TableContainer>
       </S.BuyerHistory>
     </>
   );

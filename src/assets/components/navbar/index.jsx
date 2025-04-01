@@ -12,7 +12,7 @@ export default function Navbar() {
     <>
       <S.NavBar>
         <nav>
-          <h1>DashLy</h1>
+          <h1>DashBoard</h1>
           <ul>
             <button onClick={() => handleNavigate("/dashboard")}>
               <li>

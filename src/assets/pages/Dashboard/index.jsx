@@ -9,7 +9,7 @@ export default function Dashboard() {
         <S.DashBoard>
           <header>
             <S.WrappedTittle>
-              <h1>Olá, seja bem-vindo(a)! </h1>
+              <h1>Olá, seja bem-vindo(a) </h1>
               <h3>Esse é o seu DashBoard pessoal.</h3>
             </S.WrappedTittle>
             <figure>
