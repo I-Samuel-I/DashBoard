@@ -1,6 +1,8 @@
 import Graphic from "../../components/Graphic";
-import NavbarDisplayOff from "../../components/NavbarDisplayOff";
+import MenuHamburguer from "../../components/MenuHamburguer";
+import Navbar from "../../components/Navbar";
 import Perfil from "../../img/perfil.png";
+import ReturnPage from "../../routes/returnPage";
 import * as S from "./style";
 export default function Dashboard() {
   return (
@@ -21,7 +23,9 @@ export default function Dashboard() {
             <Graphic />
           </section>
         </S.DashBoard>
-        <NavbarDisplayOff />
+        <Navbar/>
+        <MenuHamburguer/>
+        <ReturnPage/>
       </S.ContentWrapped>
     </>
   );

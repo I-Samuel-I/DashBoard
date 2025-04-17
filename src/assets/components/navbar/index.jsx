@@ -1,5 +1,6 @@
 import * as S from "./style";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTableColumns,faWallet,faCartShopping,faUsersGear , faGear ,faPowerOff} from "@fortawesome/free-solid-svg-icons";
 export default function Navbar() {
   const Navigate = useNavigate();

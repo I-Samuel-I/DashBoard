@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
 import Config from "../pages/Config";
 import Support from "../pages/Support";
+import Wallet from "../pages/Wallet";
 
 export default  function AppRoutes() {
     return(
@@ -17,9 +18,11 @@ export default  function AppRoutes() {
             </ul> */}
             <Routes>
                 <Route path="/" element={<Home/>} />
-                <Route path="/dashboard" element={<Dashboard/>} />
-                <Route path="settings" element={<Config/>}/>
-                <Route path="Support" element={<Support/>}/>
+                <Route path="/Dashboard" element={<Dashboard/>} />
+                <Route path="/Settings" element={<Config/>}/>
+                <Route path="/Support" element={<Support/>}/>
+                <Route path="/Wallet" element={<Wallet/>}/>
+                <Route path="*" element={<h1>404 - Not Found</h1>} />
             </Routes>
         </Router>
     )

@@ -14,14 +14,15 @@ export const NavBar = styled.div`
       width: 30%;
       height: 150vh;
     }
-    @media (767px < width <= 991px) {
-      width: 50%;
+    @media (width <= 991px) {
+      display: none;
     }
 
   h1 {
     padding: 30px;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #9e6efe;
+    margin-top: 20%;
   }
 
   ul {

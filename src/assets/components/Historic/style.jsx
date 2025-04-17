@@ -22,7 +22,7 @@ export const BuyerHistory = styled.section`
 
 export const TableContainer = styled.div`
   width: 100%;
-  overflow-x: auto;
+  overflow-x: auto; 
   
 `;
 

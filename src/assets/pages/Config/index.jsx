@@ -92,6 +92,7 @@ export default function Config() {
           </div>
         </S.Options>
         <NavbarDisplayOff />
+        <ReturnPage/>
       </S.Config>
     </>
   );

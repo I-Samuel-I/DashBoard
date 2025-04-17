@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const Config = styled.section`
-  display: flex;
+export const Config = styled.main`
+  display: flex;  
   flex-direction: row-reverse;
-  background-color: #73737309;
   height: 100vh;
 `;
 export const Options = styled.div`

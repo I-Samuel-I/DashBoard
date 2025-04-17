@@ -12,6 +12,7 @@ body,html {
     width: 100%;
     height: auto;
     font-family: 'Poppins', sans-serif;
+    background-color: #73737305;
     overflow-x: hidden;
     color: #262626;
 }   

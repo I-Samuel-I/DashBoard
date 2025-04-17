@@ -32,26 +32,26 @@ export const Graphic = styled.section`
   }
 `;
 export const ResultWrapped = styled.span`
-    ul:nth-child(2){
-      position: relative;
-      top: 10%;
+  ul:nth-child(2) {
+    position: relative;
+    top: 10%;
+    z-index: 1;
 
-      li{
-        margin-bottom: 3%;
-        color: #737373;
-      }
+    li {
+      margin-bottom: 3%;
+      color: #737373;
     }
-    ul:nth-child(1){
-      display: flex;
-      align-items: flex-end;
-      margin-left: 10%;
-    }
-  
-  `;
+  }
+  ul:nth-child(1) {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10%;
+  }
+`;
 export const ColumnWrapped = styled.span`
   display: flex;
-  align-items: flex-start;
   overflow-x: auto;
+  margin-top: 5%;
   @media (width <= 768px) {
     overflow-x: auto;
   }
@@ -68,6 +68,9 @@ export const ColumnWrapped = styled.span`
   li {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    
+    
   }
 
   div {
@@ -83,7 +86,7 @@ export const ColumnWrapped = styled.span`
 export const WrappedHistoric = styled.span`
   li {
     color: #9e6efe;
-    background-color: #73737310;
+    background-color: #73737309;
     display: flex;
     align-items: center;
     display: flex;
@@ -97,7 +100,7 @@ export const WrappedHistoric = styled.span`
     padding: 5px;
     align-items: center;
     margin-bottom: 2%;
-    background-color: #73737307;
+
   }
   h1 {
     margin-bottom: 3%;
