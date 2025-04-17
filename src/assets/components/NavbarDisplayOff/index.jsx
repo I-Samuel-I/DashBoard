@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
-import Navbar from "../Navbar";
+
 import MenuHamburguer from "../MenuHamburguer";
+import Navbar from "../Navbar";
 
 export default function NavbarDisplayOff() {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -12,5 +13,5 @@ export default function NavbarDisplayOff() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   });
-  return <>{showNavbar ? <Navbar /> : <MenuHamburguer/>}</>;
+  return <>{showNavbar ? <Navbar/> : <MenuHamburguer/>}</>;
 }
