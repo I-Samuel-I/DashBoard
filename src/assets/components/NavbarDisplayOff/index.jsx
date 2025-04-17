@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-import Navbar from "../navbar";
+import Navbar from "../Navbar";
 import MenuHamburguer from "../MenuHamburguer";
 
 export default function NavbarDisplayOff() {
