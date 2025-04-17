@@ -1,7 +1,6 @@
 import Balance from "../../components/Balance";
 import Investments from "../../components/Investments";
-import MenuHamburguer from "../../components/MenuHamburguer";
-import Navbar from "../../components/Navbar";
+import NavbarDisplayOff from "../../components/NavbarDisplayOff";
 import ReturnPage from "../../routes/returnPage";
 import * as S from "./style";
 export default function Wallet() {
@@ -12,8 +11,7 @@ export default function Wallet() {
           <Balance />
           <Investments />
         </S.WalletWrapped>
-        <Navbar />
-        <MenuHamburguer />
+        <NavbarDisplayOff/>
         <ReturnPage/>
       </S.Wallet>
     </>
