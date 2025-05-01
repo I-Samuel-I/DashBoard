@@ -1,28 +1,26 @@
 import styled from "styled-components";
 
-export const ContentWrapped = styled.main`
+export const MainContainer = styled.main`
   display: flex;
   flex-direction: row-reverse;
   @media (width <= 750px) {
     flex-direction: column;
   }
 `;
-export const DashBoard = styled.header`
+export const DashBoard = styled.div`
   flex: 1;
-  
-  
   header {
-    margin-left: 5%;
-    margin-top: 5%;
     display: flex;
     flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
   }
   figure {
     display: flex;
-    margin-left: auto;
     position: relative;
-    right: 10%;
-    
+    margin-left: auto;
+    margin-right: 2%;
     img {
       position: relative;
       width: 50px;
@@ -32,36 +30,91 @@ export const DashBoard = styled.header`
     }
     p {
       display: flex;
-      height: 50px;
       align-items: center;
+      height: 50px;
       margin-left: 10px;
       font-weight: 500;
     }
-    @media (width <= 992px) {
-    
-      right: 6%;
-      top: -10px;
-    p{
-      display: none;
+  }
+  @media (width < 1200px) {
+    header {
+      margin-top: 15%;
     }
+    figure {
+      p {
+        display: none;
+      }
     }
   }
+  @media (width < 992px) {
+    header {
+      align-items: center;
+    }
+    figure {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  @media (width < 768px) {
+    figure {
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+  @media (width < 600px) {
+    header {
+      margin-top: 20%;
+    }
+    figure {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  @media (width < 500px) {
+    header {
+      margin-top: 25%;
+    }
+
+  }
 `;
-export const WrappedTittle = styled.div`
+export const TittleContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 3%;
-  @media (  width <= 499px) {
-    margin-top: 20%;
-  }
-  @media ( 500px <= width <= 749px) {
-    margin-top: 15%;
-  }
-  @media ( 750px <= width <= 992px) {
-    margin-top: 8%;
-  }
-  h3 {
-    color: #737373;
+  h2 {
     font-weight: 500;
+    font-size: 1.2rem;
+    color: #737373;
+  }
+
+  @media (width < 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  @media (width < 600px) {
+    h1 {
+      font-size: 1.7rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+  @media (width < 500px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 0.8rem;
+    }
   }
 `;

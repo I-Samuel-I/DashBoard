@@ -2,25 +2,25 @@ import styled from "styled-components";
 
 export const Graphic = styled.section`
   display: flex;
-  width: 90%;
-  margin-left: 5%;
   flex-wrap: nowrap;
+  width: 90%;
   gap: 5%;
+  margin-left: 5%;
   @media (width <= 1199px) {
     display: flex;
     flex-direction: column;
     width: 90%;
     div {
-      border-radius: 15px;
       margin-bottom: 5%;
+      border-radius: 15px;
     }
   }
   div {
-    background-color: white;
-    height: auto;
     width: 100%;
-    box-shadow: 10px 1px 15px #73737316;
+    height: auto;
     padding: 20px;
+    box-shadow: 10px 1px 15px #73737316;
+    background-color: white;
   }
   ul {
     list-style: none;
@@ -56,8 +56,8 @@ export const ColumnWrapped = styled.span`
     overflow-x: auto;
   }
   ul {
-    position: relative;
     display: flex;
+    position: relative;
     align-items: flex-end;
     width: 100%;
     gap: 2%;
@@ -69,8 +69,6 @@ export const ColumnWrapped = styled.span`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
-    
   }
 
   div {
@@ -79,28 +77,26 @@ export const ColumnWrapped = styled.span`
     border-radius: 10px;
   }
   p {
-    color: #737373;
     text-align: center;
+    color: #737373;
   }
 `;
 export const WrappedHistoric = styled.span`
   li {
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    font-weight: 550;
     color: #9e6efe;
     background-color: #73737309;
-    display: flex;
-    align-items: center;
-    display: flex;
-    margin-bottom: 2%;
-    font-weight: 550;
-    border-radius: 10px;
-    padding-left: 3%;
   }
   ul li ul li {
+    align-items: center;
     width: 100%;
     padding: 5px;
-    align-items: center;
     margin-bottom: 2%;
-
   }
   h1 {
     margin-bottom: 3%;

@@ -2,60 +2,55 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const NavBar = styled.div`
-  background-color: white;
-  width: 15%;
+  width: 17%;
   border-radius: 10px;
   box-shadow: 10px 0px 15px #73737316;
+  background-color: white;
 
   @media (width <= 1440px) {
     width: 20%;
   }
   @media (991px < width <= 1199px) {
     width: 30%;
-    height: 150vh;
   }
-  @media (width <= 991px) {
-    display: none;
-  }
-
   h1 {
     padding: 30px;
+    margin-top: 20%;
     font-size: 2em;
     color: #9e6efe;
-    margin-top: 20%;
   }
 
   ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     width: auto;
     list-style: none;
+    gap: 10px;
   }
   button {
     width: 80%;
-    background: none;
-    border: none;
-    font: inherit;
-    color: inherit;
-    cursor: pointer;
     outline: none;
     appearance: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    background: none;
   }
   li {
     display: flex;
-    padding: 10px;
     align-items: center;
     width: 100%;
     height: 5vh;
+    padding: 10px;
     font-size: 1.2em;
     font-weight: 550;
 
     &:hover {
+      border-radius: 5px;
       color: #9e6efe;
       background-color: #73737311;
-      border-radius: 5px;
     }
   }
 `;

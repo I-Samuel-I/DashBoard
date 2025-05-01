@@ -1,7 +1,7 @@
 import * as S from "./style";
 import { useState } from "react";
 
-export default function DarkMode(props) {
+export default function DarkMode() {
   const [DarkMode, setDarkMode] = useState(false);
 
   const toogleDark = () => {

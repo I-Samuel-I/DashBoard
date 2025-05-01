@@ -1,4 +1,5 @@
-import ReturnPage from "../../routes/returnPage";
+
+import ReturnPage from "../../routes/Return/returnPage";
 import * as S from "./style";
 export default function Support() {
   return (

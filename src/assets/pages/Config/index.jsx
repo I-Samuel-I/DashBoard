@@ -1,20 +1,9 @@
-import { useEffect, useState } from "react";
 import * as S from "./style";
-import DarkMode from "../../components/DarkMode";
+import DarkMode from "../../components/configPage/DarkMode";
 import Language from "../../components/Language";
-import NavbarDisplayOff from "../../components/NavbarDisplayOff";
-import ReturnPage from "../../routes/returnPage";
+import NavbarDisplayOff from "../../components/nav/NavbarDisplayOff";
+import ReturnPage from "../../routes/Return/returnPage";
 export default function Config() {
-  const [showNavbar, setShowNavbar] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setShowNavbar(window.innerWidth > 768);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  });
   return (
     <>
       <S.Config>
@@ -23,24 +12,24 @@ export default function Config() {
             <h1> Preferências </h1>
             <ul>
               <li>
-                <h3>
+                <h2>
                   Tema
                   <p>
                     Escolha entre tema escuro (ideal para pouca luz) ou tema
                     claro (aparência brilhante). Personalize conforme sua
                     preferência.
                   </p>
-                </h3>
+                </h2>
                 <DarkMode />
               </li>
               <li>
-                <h3>
+                <h2>
                   Idioma
                   <p>
                     Altere o idioma da plataforma para o de sua preferência,
                     facilitando a navegação e compreensão do conteúdo.
                   </p>
-                </h3>
+                </h2>
                 <Language />
               </li>
             </ul>
@@ -49,50 +38,50 @@ export default function Config() {
             <h1> Privacidade </h1>
             <ul>
               <li>
-                <h3>
+                <h2>
                   Corrigir dados pessoais
                   <p>
                     Ajuste ou atualize suas informações pessoais para mantê-las
                     precisas e atualizadas.
                   </p>
-                </h3>
+                </h2>
                 <button>Retificar</button>
               </li>
               <li>
-                <h3>
+                <h2>
                   Atualizar documentos
                   <p>
                     Adicione ou substitua documentos necessários para manter sua
                     conta em conformidade.
                   </p>
-                </h3>
+                </h2>
                 <button>Atualizar</button>
               </li>
               <li>
-                <h3>
+                <h2>
                   Excluir conta
                   <p>
                     Remova permanentemente sua conta e todos os dados associados
                     a ela.
                   </p>
-                </h3>
+                </h2>
                 <S.DeleteBtn>Excluir</S.DeleteBtn>
               </li>
               <li>
-                <h3>
+                <h2>
                   Portal de privacidade
                   <p>
                     Acesse ferramentas e configurações para gerenciar sua
                     privacidade e dados pessoais.
                   </p>
-                </h3>
+                </h2>
                 <button>Inserir</button>
               </li>
             </ul>
           </div>
         </S.Options>
         <NavbarDisplayOff />
-        <ReturnPage/>
+        <ReturnPage />
       </S.Config>
     </>
   );

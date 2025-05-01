@@ -11,6 +11,7 @@ _Tecnologias:_
 - Styled-components 💅
 - Vite ⚡
 - React Router
+- AOS
 
 ### Como usar:
 

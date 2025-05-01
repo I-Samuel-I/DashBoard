@@ -5,7 +5,7 @@ import Finance from "../finance";
 
 export default function Graphic() {
   const data = [
-    { month: "Fev",},
+    { month: "Fev" },
     { month: "Mar" },
     { month: "Abr" },
     { month: "Mai" },

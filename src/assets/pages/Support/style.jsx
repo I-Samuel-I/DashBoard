@@ -27,8 +27,7 @@ export const Support = styled.section`
 `;
 export const ReturnWrapped = styled.div`
 position: absolute;
+width: 100%;
 top:0;
 left: 0;
-width: 100%;
-
 `

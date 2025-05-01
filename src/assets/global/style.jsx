@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-
 *{
     margin: 0px;
     padding: 0px;
@@ -10,10 +9,10 @@ export const GlobalStyle = createGlobalStyle`
 }
 body,html {
     width: 100%;
-    height: auto;
-    font-family: 'Poppins', sans-serif;
-    background-color: #73737305;
+    height: auto; 
     overflow-x: hidden;
-    color: #262626;
+    font-family: 'Poppins', sans-serif;
+    color: #262626;  
+    background-color: #73737305;
 }   
 `;

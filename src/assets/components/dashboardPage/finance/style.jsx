@@ -1,35 +1,35 @@
 import styled from "styled-components";
 
-export const WrappedFinance = styled.section`
+export const WrappedFinance = styled.div`
   section {
     display: flex;
     justify-content: space-around;
     width: 90%;
-    margin-left: 5%;
     gap: 6%;
+    margin-left: 5%;
   }
   div {
+    width: 100%;
     margin-top: 3%;
-    background-color: white;
-    border-radius: 15px;
     padding: 15px;
+    border-radius: 15px;
     box-shadow: 10px 1px 15px #73737316;
-    width: 30%;
+    background-color: white;
   }
   h1 {
+    font-size: 1.2rem;
     font-weight: 550;
-    padding: 10px;
   }
   p {
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 550;
-    padding-left: 10px;
+    margin-top: 10%;
   }
   @media (width <= 1199px) {
     section {
       flex-wrap: wrap;
-      gap: 0;
       width: 90%;
+      gap: 0;
       margin-top: -2%;
     }
     div {
@@ -37,7 +37,7 @@ export const WrappedFinance = styled.section`
     }
   }
   @media (width <= 600px) {
-    section{
+    section {
       margin: auto;
     }
     div {
@@ -46,32 +46,58 @@ export const WrappedFinance = styled.section`
     }
   }
 `;
+
 export const WrappedIconGreen = styled.h1`
-  color: #0bb07b;
-  font-size: 15px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 5px;
+  gap: 10px;
   margin-top: 5%;
-  margin-left: 5%;
-  background-color: #73737309;
+  font-size: 15px;
   border-radius: 50px;
-  width: 40%;
+  color: green;
+  background-color: #73737309;
   p {
     font-size: 15px;
   }
 `;
+
 export const WrappedIconRed = styled.h1`
-  color: red;
-  font-size: 15px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  width: 50%;
+  padding: 10px;
+  gap: 10px;
   margin-top: 5%;
-  margin-left: 5%;
-  background-color: #73737309;
+  font-size: 15px;
   border-radius: 50px;
-  width: 40%;
+  color: red;
+  background-color: #73737309;
   p {
     font-size: 15px;
+  }
+
+  @media (width <= 1199px) {
+    section {
+      flex-wrap: wrap;
+      width: 90%;
+      gap: 0;
+      margin-top: -2%;
+    }
+    div {
+      width: 47%;
+    }
+  }
+  @media (width <= 600px) {
+    section {
+      margin: auto;
+    }
+    div {
+      width: 100%;
+      margin-top: 5%;
+    }
   }
 `;
