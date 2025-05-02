@@ -7,7 +7,7 @@ export const Home = styled.section`
   align-items: center;
   height: 100vh;
 `;
-export const AntButton = styled.button`
+export const EnterButton = styled.button`
   width: 200px;
   height: 50px;
   border-radius: 5px;

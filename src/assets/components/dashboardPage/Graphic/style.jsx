@@ -81,12 +81,12 @@ export const ColumnWrapped = styled.span`
     color: #737373;
   }
 `;
-export const WrappedHistoric = styled.span`
+export const HistoricTransation = styled.span`
   li {
     display: flex;
     align-items: center;
     padding-left: 3%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     border-radius: 10px;
     font-weight: 550;
     color: #9e6efe;
@@ -100,5 +100,11 @@ export const WrappedHistoric = styled.span`
   }
   h1 {
     margin-bottom: 3%;
+  }
+  @media (width <= 500px) {
+    li{
+      font-size: 0.9rem;
+    }
+
   }
 `;

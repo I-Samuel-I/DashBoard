@@ -83,7 +83,7 @@ export const DashBoard = styled.div`
 
   }
 `;
-export const TittleContainer = styled.div`
+export const Title = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 3%;

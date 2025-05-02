@@ -47,7 +47,7 @@ export default function Graphic() {
         </div>
 
         <div>
-          <S.WrappedHistoric>
+          <S.HistoricTransation>
             <h1>Histórico de Transações</h1>
             <ul>
               <li>
@@ -69,7 +69,7 @@ export default function Graphic() {
                 </ul>
               </li>
             </ul>
-          </S.WrappedHistoric>
+          </S.HistoricTransation>
         </div>
       </S.Graphic>
       <Finance />

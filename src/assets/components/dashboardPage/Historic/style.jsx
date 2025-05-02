@@ -1,29 +1,36 @@
 import styled from "styled-components";
 
 export const BuyerHistory = styled.section`
-  background-color: white;
   width: 90%;
-  height: auto;
+  padding: 30px;
   border-radius: 20px;
   margin-left: 5%;
   margin-top: 3%;
   margin-bottom: 3%;
-  padding: 30px;
   box-shadow: 10px 1px 15px #73737316;
+  background-color: white;
 
   h1 {
     font-weight: 550;
-    font-size: 1.4em;
-    @media (width <= 799px) {
-      font-size: 1.2em;
+    font-size: 1.4rem;
+  }
+  @media (width < 768px) {
+    h1 {
+      margin-bottom: 5%;
+      font-size: 1.2rem;
+    }
+  }
+  @media (width < 500px) {
+    h1 {
+      margin-bottom: 5%;
+      font-size: 1rem;
     }
   }
 `;
 
 export const TableContainer = styled.div`
   width: 100%;
-  overflow-x: auto; 
-  
+  overflow-x: auto;
 `;
 
 export const WrappedTabble = styled.table`
@@ -34,18 +41,12 @@ export const WrappedTabble = styled.table`
 
   thead {
     font-size: 1.1em;
-    @media (width <= 600px) {
-      font-size: 0.9em;
-    }
   }
   tbody {
-    text-align: center;
-    color: #737373;
-    font-weight: 550;
     overflow-x: auto;
-    @media (width <= 600px) {
-      font-size: 0.9em;
-    }
+    text-align: center;
+    font-weight: 550;
+    color: #737373;
   }
   tbody tr:first-child td {
     height: 10vh;
@@ -63,12 +64,27 @@ export const WrappedTabble = styled.table`
   tbody tr:nth-child(2) td:last-child {
     color: orange;
   }
+
+  @media (width < 1200px) {
+    td {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  @media (width <= 600px) {
+    thead {
+      font-size: 0.9em;
+    }
+    td{
+      font-size: 0.85rem;
+    }
+  }
 `;
 export const StatusCircle = styled.span`
   display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: ${(props) => props.color};
   margin-right: 8px;
+  background-color: ${(props) => props.color};
 `;

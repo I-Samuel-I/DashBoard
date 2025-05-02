@@ -9,10 +9,10 @@ export default function Dashboard() {
     <S.MainContainer>
       <S.DashBoard>
         <header>
-          <S.TittleContainer>
+          <S.Title>
             <h1>Olá, seja bem-vindo(a) </h1>
             <h2>Esse é o seu DashBoard pessoal.</h2>
-          </S.TittleContainer>
+          </S.Title>
           <figure>
             <img src={Perfil} alt="Perfil" />
             <p>Samuel Gomes</p>

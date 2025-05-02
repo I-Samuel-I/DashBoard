@@ -6,14 +6,14 @@ import * as S from "./style";
 export default function Wallet() {
   return (
     <>
-      <S.Wallet>
-        <S.WalletWrapped>
+      <S.WalletMain>
+        <S.WalletInfo>
           <Balance />
           <Investments />
-        </S.WalletWrapped>
+        </S.WalletInfo>
         <NavbarDisplayOff/>
         <ReturnPage/>
-      </S.Wallet>
+      </S.WalletMain>
     </>
   );
 }

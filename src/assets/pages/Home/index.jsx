@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <S.Home>
         <h1>Bem-Vindo(a) ao meu DashBoard pessoal</h1>
-        <S.AntButton onClick={Join}> Entrar</S.AntButton>
+        <S.EnterButton onClick={Join}> Entrar</S.EnterButton>
       </S.Home>
     </>
   );

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const WrappedFinance = styled.div`
+export const Finance = styled.div`
   section {
     display: flex;
     justify-content: space-around;
@@ -25,7 +25,7 @@ export const WrappedFinance = styled.div`
     font-weight: 550;
     margin-top: 10%;
   }
-  @media (width <= 1199px) {
+  @media (width < 1200px) {
     section {
       flex-wrap: wrap;
       width: 90%;
@@ -36,7 +36,7 @@ export const WrappedFinance = styled.div`
       width: 47%;
     }
   }
-  @media (width <= 600px) {
+  @media (width < 600px) {
     section {
       margin: auto;
     }
@@ -47,57 +47,32 @@ export const WrappedFinance = styled.div`
   }
 `;
 
-export const WrappedIconGreen = styled.h1`
+export const Icons = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  padding: 5px;
-  gap: 10px;
-  margin-top: 5%;
-  font-size: 15px;
-  border-radius: 50px;
-  color: green;
-  background-color: #73737309;
-  p {
-    font-size: 15px;
-  }
-`;
-
-export const WrappedIconRed = styled.h1`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
+  width: 60%;
   padding: 10px;
   gap: 10px;
   margin-top: 5%;
-  font-size: 15px;
   border-radius: 50px;
-  color: red;
   background-color: #73737309;
+
+  color: ${({ positive, negative }) =>
+    positive ? "#4caf50" : negative ? "#f44336" : "#737373"};
+
   p {
+    position: relative;
+    bottom: 5px;
     font-size: 15px;
   }
+  @media (width < 1200px) {
+    width: 35%;
+    padding: 5px;
 
-  @media (width <= 1199px) {
-    section {
-      flex-wrap: wrap;
-      width: 90%;
-      gap: 0;
-      margin-top: -2%;
-    }
-    div {
-      width: 47%;
-    }
-  }
-  @media (width <= 600px) {
-    section {
-      margin: auto;
-    }
-    div {
-      width: 100%;
-      margin-top: 5%;
+    svg {
+      position: relative;
+      top: 1px;
     }
   }
 `;

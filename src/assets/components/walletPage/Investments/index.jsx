@@ -1,47 +1,43 @@
-import * as S from './style.jsx';
+import * as S from "./style.jsx";
+import * as JS from "./script.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 export default function Investments() {
-    return (
-      <>
-        <S.Investments>
-          <h1>Meus Ativos</h1>
-          <table>
-            <thead>
-              <tr>
-                <th>Conta</th>
-                <th>Valores</th>
-                <th>Proporção</th>
-                <th>Ação</th>
+  return (
+    <>
+      <S.Investments>
+        <h1>Meus Ativos</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Conta</th>
+              <th>Valores</th>
+              <th>Proporção</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            {JS.active.map((item, index) => (
+              <tr key={index}>
+                <td>{item.conta}</td>
+                <td>{item.valor}</td>
+                <td>{item.porcentagem}</td>
+                <td>{item.ativo}</td>
+                <div>
+                  <FontAwesomeIcon icon={faEllipsisVertical} />
+                  <S.MoreOptions>
+                    <ul>
+                      <li>Depósito</li>
+                      <li>Saque</li>
+                      <li>Transferência</li>
+                    </ul>
+                  </S.MoreOptions>
+                </div>
               </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Spot</td>
-                <td>R$ 0,76</td>
-                <td>50,93%</td>
-                <td>a</td>
-              </tr>
-              <tr>
-                <td>Fundos</td>
-                <td>R$ 12,30</td>
-                <td>49,07%</td>
-                <td>a</td>
-              </tr>
-              <tr>
-                <td>Margem Cruzada</td>
-                <td>R$ 123,21</td>
-                <td>23,43%</td>
-                <td>a</td>
-              </tr>
-              <tr>
-                <td>Margem Isolada</td>
-                <td>R$ 31,55</td>
-                <td>78,61%</td>
-                <td>a</td>
-              </tr>
-            </tbody>
-          </table>
-        </S.Investments>
-      </>
-    );
-  }
-  
+            ))}
+          </tbody>
+        </table>
+      </S.Investments>
+    </>
+  );
+}
