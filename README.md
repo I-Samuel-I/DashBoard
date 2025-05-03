@@ -2,9 +2,6 @@
 
 > Status : Em andamento 
 
-## Desafio [30] Codelândia - Iuri Silva
->Veja o design: https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---CodeLab?node-id=270506-58&t=zicJo627j5VnqTSJ-0
-
 _Tecnologias:_
 
 - ReactJS ⚛️
