@@ -44,9 +44,6 @@ export const Balance = styled.header`
     gap: 10px;
     nav {
       width: 100%;
-      ul {
-        gap: 15px;
-      }
     }
     @media (width < 600px) {
       li {

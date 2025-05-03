@@ -20,7 +20,7 @@ _Tecnologias:_
 - code . (caso use o VSCode)
 - npm start / yarn start
 
-## 💻 Página oline: https://dash-board-xi-gules.vercel.app
+## 💻 Página oline: https://dash-board-theta-navy.vercel.app
 
 ## 🌐 Contate-me:
 

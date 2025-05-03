@@ -1,25 +1,16 @@
 import styled from "styled-components";
 
 export const Config = styled.main`
-  display: flex;  
+  display: flex;
   flex-direction: row-reverse;
-  height: 100vh;
 `;
 export const Options = styled.div`
-  width: 80%;
+  width: 90%;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
-
-  @media (width <= 767px) {
-    width: 100%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 5%;
-  }
-
-  @media (767px < width <= 991px) {
-    width: 100%;
+  h2 {
+    font-size: 1.2rem;
   }
 
   div {
@@ -30,27 +21,12 @@ export const Options = styled.div`
     border-radius: 15px;
   }
   button {
+    width: 15%;
+    height: 50px;
     border: none;
     border-radius: 10px;
-    width: 15%;
     font-weight: 550;
     font-size: 0.9em;
-    height: 50px;
-
-    @media (991px < width <= 1199px) {
-      width: 50%;
-      height: 50px;
-    }
-
-    @media (651px < width <= 990px) {
-      width: 40%;
-    }
-    @media (500 <width <= 650px) {
-      width: 65%;
-    }
-    @media (width <= 499px) {
-      width: 100%;
-    }
   }
   button:hover {
     cursor: pointer;
@@ -73,17 +49,46 @@ export const Options = styled.div`
     padding-bottom: 25px;
   }
   p {
-    padding-right: 200px;
+    width: 80%;
     padding-top: 10px;
     font-weight: normal;
-    font-size: 0.9em;
     color: #737373;
+  }
 
-    @media (500 <= width <= 767px) {
-      padding-right: 50px;
+  @media (width < 1200px) {
+
+    button{
+      width: 25%;
     }
-    @media (width <= 499px) {
-      padding-right: 0px;
+  }
+  @media (width < 992px) {
+    margin-top: 15%;
+    button{
+      width: 30%;
+    }
+    li {
+      flex-direction: column;
+    }
+    p {
+      width: 100%;
+      margin-bottom: 3%;
+    }
+  }
+  @media (width < 600px) {
+    margin-top: 25%;
+    
+    div{
+      margin-bottom: 5%;
+    }
+    h1{
+      font-size: 1.5rem;
+
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    button{
+      width: 45%;
     }
   }
 `;

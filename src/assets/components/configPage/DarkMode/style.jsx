@@ -20,10 +20,10 @@ export const Slider = styled.span`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  border-radius: 34px;
+ border-radius: 34px;
+  
   transition: 0.4s;
-
+ background-color: #ccc;
   &:before {
     content: "";
     position: absolute;

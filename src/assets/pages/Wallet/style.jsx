@@ -8,4 +8,5 @@ export const WalletInfo = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 2%;
 `

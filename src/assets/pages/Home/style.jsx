@@ -6,6 +6,15 @@ export const Home = styled.section`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 15px;
+  h1{
+    text-align: center;
+  }
+  @media(width < 600px) {
+    h1{
+      font-size: 1.2rem;
+    }
+  }
 `;
 export const EnterButton = styled.button`
   width: 200px;
