@@ -1,80 +1,146 @@
 import * as S from "./style";
-
 import DarkMode from "../../components/configPage/DarkMode";
-import Language from "../../components/Language";
 import NavbarDisplayOff from "../../components/nav/NavbarDisplayOff";
 import ReturnPage from "../../routes/Return/returnPage";
-
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 export default function Config() {
+  const { t } = useTranslation();
+  const { i18n } = useTranslation(); // Agora i18n existe
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+
+  const handleChangeLanguage = () => {
+    const newLanguage = currentLanguage === "en" ? "pt" : "en";
+    i18n.changeLanguage(newLanguage);
+    setCurrentLanguage(newLanguage);
+  };
   return (
     <>
       <S.Config>
         <S.Options>
           <div>
-            <h1> Preferências </h1>
+            <h1>
+              {t(
+                "configPage.preferenceSection.preferenceTitle",
+                "Preferências"
+              )}
+            </h1>
             <ul>
               <li>
                 <span>
-                  <h2>Tema</h2>
-                  <p>Escolha entre tema escuro ou tema claro.</p>
+                  <h2>
+                    {t("configPage.preferenceSection.preferenceTheme", "Tema")}
+                  </h2>
+                  <p>
+                    {t(
+                      "configPage.preferenceSection.preferenceThemeText",
+                      "Escolha entre tema escuro ou tema claro."
+                    )}
+                  </p>
                 </span>
                 <DarkMode />
               </li>
               <li>
                 <span>
-                  <h2>Idioma </h2>
+                  <h2>
+                    {t(
+                      "configPage.preferenceSection.preferenceLanguage",
+                      "Idioma"
+                    )}
+                  </h2>
                   <p>
-                    Altere o idioma da plataforma para o de sua preferência,
-                    facilitando a navegação e compreensão do conteúdo.
+                    {t(
+                      "configPage.preferenceSection.preferenceLanguageText",
+                      "Altere o idioma da plataforma para o de sua preferência, facilitando a navegação e compreensão do conteúdo."
+                    )}
                   </p>
                 </span>
-                <Language />
+                <button onClick={handleChangeLanguage}>
+                  {currentLanguage === "en" ? "English" : "Português (Brasil)"}
+                </button>
               </li>
             </ul>
           </div>
           <div>
-            <h1> Privacidade </h1>
+            <h1>
+              {t("configPage.privacySection.privacyTitle", "Privacidade")}
+            </h1>
             <ul>
               <li>
                 <span>
-                  <h2>Corrigir dados pessoais</h2>
+                  <h2>
+                    {t(
+                      "configPage.privacySection.privacyData",
+                      "Corrigir dados pessoais"
+                    )}
+                  </h2>
                   <p>
-                    Ajuste ou atualize suas informações pessoais para mantê-las
-                    precisas e atualizadas.
+                    {t(
+                      "configPage.privacySection.privacyDataText",
+                      "Ajuste ou atualize suas informações pessoais para mantê-las precisas e atualizadas."
+                    )}
                   </p>
                 </span>
-                <button>Retificar</button>
+                <button>
+                  {t("configPage.privacySection.privacyDataBtn", "Retificar")}
+                </button>
               </li>
               <li>
                 <span>
-                  <h2>Atualizar documentos</h2>
+                  <h2>
+                    {t(
+                      "configPage.privacySection.privacyUpdate",
+                      "Atualizar documentos"
+                    )}
+                  </h2>
                   <p>
-                    Adicione ou substitua documentos necessários para manter sua
-                    conta em conformidade.
+                    {t(
+                      "configPage.privacySection.privacyUpdateText",
+                      "Adicione ou substitua documentos necessários para manter sua conta em conformidade."
+                    )}
                   </p>
                 </span>
-                <button>Atualizar</button>
+                <button>
+                  {t("configPage.privacySection.privacyUpdateBtn", "Atualizar")}
+                </button>
               </li>
               <li>
                 <span>
-                  <h2>Excluir conta</h2>
+                  <h2>
+                    {t(
+                      "configPage.privacySection.privacyDelete",
+                      "Excluir conta"
+                    )}
+                  </h2>
                   <p>
-                    Remova permanentemente sua conta e todos os dados associados
-                    a ela.
+                    {t(
+                      "configPage.privacySection.privacyDeleteText",
+                      "Remova permanentemente sua conta e todos os dados associados a ela."
+                    )}
                   </p>
                 </span>
-                <S.DeleteBtn>Excluir</S.DeleteBtn>
+                <S.DeleteBtn>
+                  {t("configPage.privacySection.privacyDeleteBtn", "Excluir")}
+                </S.DeleteBtn>
               </li>
               <li>
                 <span>
-                  <h2>Portal de privacidade</h2>
+                  <h2>
+                    {t(
+                      "configPage.privacySection.privacyPortal",
+                      "Portal de privacidade"
+                    )}
+                  </h2>
                   <p>
-                    Acesse ferramentas e configurações para gerenciar sua
-                    privacidade e dados pessoais.
+                    {t(
+                      "configPage.privacySection.privacyPortalText",
+                      "Acesse ferramentas e configurações para gerenciar sua privacidade e dados pessoais."
+                    )}
                   </p>
                 </span>
-
-                <button>Inserir</button>
+                <button>
+                  {t("configPage.privacySection.privacyPortalBtn", "Inserir")}
+                </button>
               </li>
             </ul>
           </div>

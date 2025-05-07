@@ -9,6 +9,7 @@ _Tecnologias:_
 - Vite ⚡
 - React Router
 - AOS
+- i18next
 
 ### Como usar:
 

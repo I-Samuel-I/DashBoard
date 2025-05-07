@@ -9,8 +9,19 @@ export default function Home() {
   return (
     <>
       <S.Home>
-        <h1>Bem-Vindo(a) ao meu DashBoard pessoal</h1>
-        <S.EnterButton onClick={Join}> Entrar</S.EnterButton>
+        <S.DashGif>
+          <img src="../../img/shutterstock_1172906944.jpg" alt="Dashboard" />
+        </S.DashGif>
+        <S.WelcomeInfo>
+          <h1>BEM-VINDO(A)</h1>
+          <h2> AO SEU DASHBOARD PESSOAL</h2>
+
+          <p>
+            Aqui você acompanha suas finanças, metas e tudo que importa em um só
+            lugar,acesse agora!
+          </p>
+          <S.EnterButton onClick={Join}> Mostre-me</S.EnterButton>
+        </S.WelcomeInfo>
       </S.Home>
     </>
   );

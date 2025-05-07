@@ -1,0 +1,113 @@
+{
+  "homePage": {
+    "welcome": "WELCOME",
+    "secondTitle": "TO YOUR PERSONAL DASHBOARD",
+    "dashboardMessage": "Here you can track your finances, goals, and everything that matters in one place. Access it now!",
+    "buttonEnter": "Show me"
+  },
+
+  "dashboardPage": {
+    "header": {
+      "title": "Hello, welcome",
+      "secondTitle": "This is your personal dashboard"
+    },
+    "graphSection": {
+      "graphicTitle": "Revenue Chart",
+      "graphicMonths-01": "Feb",
+      "graphicMonths-02": "Mar",
+      "graphicMonths-03": "Apr",
+      "graphicMonths-04": "May",
+      "graphicMonths-05": "Jun",
+      "graphicMonths-06": "Jul",
+      "graphicMonths-07": "Aug",
+      "graphicMonths-08": "Sep",
+      "graphicMonths-09": "Oct"
+    },
+    "transactionHistorySection": {
+      "historyTitle": "Transaction History",
+      "historiyDays-01": "Yesterday",
+      "historiyDays-02": "Thursday",
+      "historiyDays-03": "Monday",
+      "historyValues-01": "$ -540.52",
+      "historyValues-02": "$ -273.90",
+      "historyValues-03": "$ -1,456.20"
+    },
+    "financeSection": {
+      "financeTitle-01": "Total Sales",
+      "financeTitle-02": "Net Total",
+      "financeTitle-03": "Cancelled Purchases",
+      "financeTitle-04": "Refunds",
+      "financeValues-01": "$ 3,265.21",
+      "financeValues-02": "$ 2,825.58",
+      "financeValues-03": "$ $130.00",
+      "financeValues-04": "$  $345.00"
+    },
+    "buyersSection": {
+      "buyersTitle": "Buyers History",
+      "buyersDate": "Date",
+      "buyersName": "Name",
+      "buyersLocation": "Location",
+      "buyersAmount": "Amount",
+      "buyersStatus": "Status",
+
+      "table": {
+        "MM/DD/YYYY-01": "08/02/2023",
+        "MM/DD/YYYY-02": "08/03/2023",
+        "tableStatus-01": "Approved",
+        "tableStatus-02": "In Analysis"
+      }
+    }
+  },
+
+  "walletPage": {
+    "balanceSection": {
+      "balanceTitle": "Available Balance",
+      "balanceAmount": "$ 125.24",
+      "balanceActions": ["Deposit", "Withdraw", "Transfer"],
+      "balanceAssets": "My Assets",
+      "balanceTableHeaders": ["Account", "Amount", "Proportion", "Assets"],
+      "balanceAccounts": [
+        {
+          "type": "Spot",
+          "amount": "$ 0.76"
+        },
+        {
+          "type": "Funds",
+          "amount": "$ 12.30"
+        },
+        {
+          "type": "Cross Margin",
+          "amount": "$ 123.21"
+        },
+        {
+          "type": "Isolated Margin",
+          "amount": "$ 110.35"
+        }
+      ],
+      "footerActions": ["Deposit", "Withdraw", "Transfer"]
+    }
+  },
+  "configPage": {
+    "preferenceSection": {
+      "preferenceTitle": "Preference",
+      "preferenceTheme": "Theme",
+      "preferenceThemeText": "Choose between dark or light theme.",
+      "preferenceLanguage": "Language",
+      "preferenceLanguageText": "Change the platform's language to your preference, making navigation and understanding of content easier.",
+      "buttonLanguage":"English"
+    },
+    "privacySection": {
+      "privacyTitle": "Privacy",
+      "privacyData": "Correct personal data",
+      "privacyUpdate": "Update documents",
+      "privacyUpdateText": "Add or replace necessary documents to keep your account compliant.",
+      "privacyDelete": "Delete account",
+      "privacyDeleteText": "Permanently remove your account and all associated data.",
+      "privacyPortal": "Privacy Portal",
+      "privacyPortalText": "Access tools and settings to manage your privacy and personal data.",
+      "privacyDataBtn": "Rectify",
+      "privacyUpdateBtn": "Update",
+      "privacyDeleteBtn": "Delete"
+    }
+  }
+}
