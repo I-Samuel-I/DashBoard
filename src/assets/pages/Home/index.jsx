@@ -1,6 +1,6 @@
+import img from "../../img/perfil.png"
 import { useNavigate } from "react-router-dom";
 import * as S from "./style";
-
 export default function Home() {
   const Navigate = useNavigate();
   const Join = () => {
@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <S.Home>
         <S.DashGif>
-          <img src="../../img/shutterstock_1172906944.jpg" alt="Dashboard" />
+          <img src={img} alt="Dashboard" />
         </S.DashGif>
         <S.WelcomeInfo>
           <h1>BEM-VINDO(A)</h1>

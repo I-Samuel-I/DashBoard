@@ -4,16 +4,19 @@ import NavbarDisplayOff from "../../components/nav/NavbarDisplayOff";
 import ReturnPage from "../../routes/Return/returnPage";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
 export default function Config() {
   const { t } = useTranslation();
-  const { i18n } = useTranslation(); // Agora i18n existe
+  const { i18n } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 
   const handleChangeLanguage = () => {
     const newLanguage = currentLanguage === "en" ? "pt" : "en";
     i18n.changeLanguage(newLanguage);
     setCurrentLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage); 
   };
+  
   return (
     <>
       <S.Config>

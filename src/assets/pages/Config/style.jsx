@@ -20,6 +20,9 @@ export const Options = styled.div`
     background-color: white;
     border-radius: 15px;
   }
+  div:nth-child(2) {
+    margin-bottom: 5%;
+  }
   button {
     width: 15%;
     height: 50px;
@@ -56,14 +59,13 @@ export const Options = styled.div`
   }
 
   @media (width < 1200px) {
-
-    button{
+    button {
       width: 25%;
     }
   }
   @media (width < 992px) {
     margin-top: 15%;
-    button{
+    button {
       width: 30%;
     }
     li {
@@ -76,18 +78,17 @@ export const Options = styled.div`
   }
   @media (width < 600px) {
     margin-top: 25%;
-    
-    div{
+
+    div {
       margin-bottom: 5%;
     }
-    h1{
+    h1 {
       font-size: 1.5rem;
-
     }
     h2 {
       font-size: 1.2rem;
     }
-    button{
+    button {
       width: 45%;
     }
   }

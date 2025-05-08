@@ -12,38 +12,44 @@ export const WelcomeInfo = styled.section`
   align-items: end;
   justify-content: center;
   padding: 25px;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-right: 5%;
-  border: solid 1px;
-  
-  h1{
+
+  h1 {
     font-size: 5.5rem;
+    color: #262626;
   }
-  h2{
+  h2 {
     font-size: 2.8rem;
+    
   }
-  p{
+  p {
     width: 55%;
     margin-top: 3%;
+    font: 700 1.5rem;
+    color: #737373;
   }
 `;
 export const EnterButton = styled.button`
   width: 200px;
   height: 50px;
-  border-radius: 5px;
-  font-size: 1.2em;
-  color: #262626;
+  border: none;
+  border-radius: 10px;
   margin-top: 3%;
-
+  font-size: 1.2em;
+  color: #ffff;
+  background-color: #9e6efe;
+  
   &:hover {
-    border: 1px solid black;
-    color: #9e6efe;
-    background-color: #73737309;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #7f58cc;
   }
 `;
 
-export const TextWrapper = styled.div `
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-`
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+`;

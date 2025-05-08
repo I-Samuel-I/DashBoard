@@ -80,7 +80,6 @@ export const DashBoard = styled.div`
     header {
       margin-top: 25%;
     }
-
   }
 `;
 export const Title = styled.div`
