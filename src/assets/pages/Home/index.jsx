@@ -9,13 +9,12 @@ export default function Home() {
   return (
     <>
       <S.Home>
-        <S.DashGif>
+        <S.ImgHome>
           <img src={img} alt="Dashboard" />
-        </S.DashGif>
+        </S.ImgHome>
         <S.WelcomeInfo>
           <h1>BEM-VINDO(A)</h1>
           <h2> AO SEU DASHBOARD PESSOAL</h2>
-
           <p>
             Aqui você acompanha suas finanças, metas e tudo que importa em um só
             lugar,acesse agora!

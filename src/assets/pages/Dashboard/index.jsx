@@ -3,7 +3,6 @@ import NavbarDisplayOff from "../../components/nav/NavbarDisplayOff";
 import Perfil from "../../img/perfil.png";
 import ReturnPage from "../../routes/Return/returnPage";
 import * as S from "./style";
-
 export default function Dashboard() {
   return (
     <S.MainContainer>

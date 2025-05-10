@@ -14,9 +14,9 @@ export default function Config() {
     const newLanguage = currentLanguage === "en" ? "pt" : "en";
     i18n.changeLanguage(newLanguage);
     setCurrentLanguage(newLanguage);
-    localStorage.setItem("language", newLanguage); 
+    localStorage.setItem("language", newLanguage);
   };
-  
+
   return (
     <>
       <S.Config>

@@ -15,11 +15,8 @@ export default function Graphic() {
     { month: t("graphSection.graphicMonths-06", "Jul"), height: "165px" },
     { month: t("graphSection.graphicMonths-07", "Ago"), height: "75px" },
     { month: t("graphSection.graphicMonths-08", "Set"), height: "115px" },
-    {
-      month: t("graphSection.graphicMonths-09", "Out"),
-      color: "#9E6EFE",
-      height: "145px",
-    },
+    { month: t("graphSection.graphicMonths-09", "Out"),color: "#9E6EFE",height: "145px",
+},
   ];
 
   return (
