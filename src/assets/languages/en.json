@@ -5,6 +5,13 @@
     "dashboardMessage": "Here you can track your finances, goals, and everything that matters in one place. Access it now!",
     "buttonEnter": "Show me"
   },
+  "navbar":{
+    "wallet":"Wallet",
+    "transactions":"Transactions",
+    "suport":"Suport",
+    "configs":"Configs",
+    "disconnect":"Disconnect"
+  },
 
   "dashboardPage": {
     "header": {
@@ -63,10 +70,15 @@
     "balanceSection": {
       "balanceTitle": "Available Balance",
       "balanceAmount": "$ 125.24",
-      "balanceActions": ["Deposit", "Withdraw", "Transfer"],
+      "balanceActions-01": "Deposit",
+      "balanceActions-02": "Withdraw",
+      "balanceActions-03": "Transfer",
       "balanceAssets": "My Assets",
-      "balanceTableHeaders": ["Account", "Amount", "Proportion", "Assets"],
-      "balanceAccounts": [
+      "balanceTableHeaders-01": "Account",
+      "balanceTableHeaders-02": "Amount",
+      "balanceTableHeaders-03": "Proportion",
+      "balanceTableHeaders-04": "Assets",
+      "balanceAccountsType01": [
         {
           "type": "Spot",
           "amount": "$ 0.76"
@@ -82,9 +94,7 @@
         {
           "type": "Isolated Margin",
           "amount": "$ 110.35"
-        }
-      ],
-      "footerActions": ["Deposit", "Withdraw", "Transfer"]
+        }]
     }
   },
   "configPage": {

@@ -10,30 +10,30 @@ export default function Investments() {
   return (
     <>
       <S.Investments>
-        <h1>{t("","Meus Ativos")}</h1>
+        <h1>{t("walletPage.balanceSection.balanceAssets","Meus Ativos")}</h1>
         <table>
           <thead>
             <tr>
-              <th>{t("","Conta")}</th>
-              <th>{t("","Valores")}</th>
-              <th>{t("","Proporção")}</th>
-              <th>{t("","Ações")}</th>
+              <th>{t("walletPage.balanceSection.balanceTableHeaders-01","Conta")}</th>
+              <th>{t("walletPage.balanceSection.balanceTableHeaders-02","Valores")}</th>
+              <th>{t("walletPage.balanceSection.balanceTableHeaders-03","Proporção")}</th>
+              <th>{t("walletPage.balanceSection.balanceTableHeaders-04","Ações")}</th>
             </tr>
           </thead>
           <tbody>
-            {JS.active.map((item, index) => (
-              <tr key={index}>
-                <td>{item.conta}</td>
-                <td>{item.valor}</td>
-                <td>{item.porcentagem}</td>
-                <td>{item.ativo}</td>
+              {JS.active.map((item, index) => (
+                  <tr key={index}>
+                  <td>{t(`walletPage.balanceSection.balanceAccounts.${item.conta}`, item.conta)}</td>
+                  <td>{item.valor}</td>
+                  <td>{item.porcentagem}</td>
+                  <td>{item.ativo}</td>
                 <div>
                   <FontAwesomeIcon icon={faEllipsisVertical} />
                   <S.MoreOptions>
                     <ul>
-                      <li>{t("","Depósito")}</li>
-                      <li>{t("","Saque")}</li>
-                      <li>{t("","Transferência")}</li>
+                      <li>{t("walletPage.balanceSection.balanceActions-01","Depósito")}</li>
+                      <li>{t("walletPage.balanceSection.balanceActions-02","Saque")}</li>
+                      <li>{t("walletPage.balanceSection.balanceActions-03","Transferência")}</li>
                     </ul>
                   </S.MoreOptions>
                 </div>
